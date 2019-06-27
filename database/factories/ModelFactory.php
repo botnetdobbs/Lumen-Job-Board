@@ -1,4 +1,5 @@
 <?php
+use Illuminate\Support\Facades\Hash;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +14,9 @@
 
 $factory->define(App\User::class, function (Faker\Generator $faker) {
     return [
-        'name' => $faker->name,
-        'email' => $faker->email,
+        'first_name' => 'test',
+        'last_name' => 'user',
+        'email' => 'test.user@email.com',
+        'password' => Hash::make('password')
     ];
 });

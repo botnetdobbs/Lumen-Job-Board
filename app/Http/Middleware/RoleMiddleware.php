@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 
-class ExampleMiddleware
+class RoleMiddleware
 {
     /**
      * Handle an incoming request.
@@ -13,8 +13,13 @@ class ExampleMiddleware
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle($request, Closure $next)
+    public function handle($request, Closure $next, $role)
     {
+        if(!$request->user()->hasRole($role)) {
+            return response()->json(['status' => 'error', 'message' => 'Not allowed'], 403);
+        }
+
         return $next($request);
+
     }
 }
