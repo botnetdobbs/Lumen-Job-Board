@@ -29,4 +29,14 @@ trait PermissionsTrait
 
         return false;
     }
+
+    public function jobs()
+    {
+        return $this->hasMany(Job::class, 'employer_id');
+    }
+
+    public function addJob($job)
+    {
+        return $this->jobs()->create($job);
+    }
 }

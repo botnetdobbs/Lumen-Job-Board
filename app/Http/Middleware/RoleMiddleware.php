@@ -15,11 +15,10 @@ class RoleMiddleware
      */
     public function handle($request, Closure $next, $role)
     {
-        if(!$request->user()->hasRole($role)) {
+        if (!$request->user()->hasRole($role)) {
             return response()->json(['status' => 'error', 'message' => 'Not allowed'], 403);
         }
 
         return $next($request);
-
     }
 }

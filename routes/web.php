@@ -17,14 +17,29 @@ $router->get('/', function () use ($router) {
 });
 
 $router->group(['prefix' => 'api/v1'], function() use(&$router) {
+    /**
+     * Authentication
+     */
     $router->group(['prefix' => 'auth'], function() use(&$router) {
         $router->post('register', 'AuthController@register');
         $router->post('login', 'AuthController@login');
     });
 
+    /**
+     * Jobs
+     */
     $router->group(['prefix' => 'jobs', 'middleware' => ['auth:api', 'cors', 'role:employer']], function() use(&$router) {
-        $router->get('/', function() {
+        $router->get('/test', function() {
             return Auth::user()->hasRole('employer') ? 'true': 'false';
         });
+        // $router->group(['middleware' => ['auth:api', 'cors', 'role:employer']], function() use(&$router) {
+
+        // });
+        $router->get('/', 'JobsController@index');
+        $router->get('/{id}', 'JobsController@show');
+        
+        $router->post('/', 'JobsController@store');
+        $router->put('/{id}', 'JobsController@update');
+        $router->delete('/{id}', 'JobsController@destroy');
     });
 });

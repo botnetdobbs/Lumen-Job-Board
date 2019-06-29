@@ -27,7 +27,7 @@ class AuthTest extends TestCase
      */
     public function userCanCreateAccount()
     {
-        $role = factory(Role::class)->create(['name' => 'employer']);
+        $role = factory(Role::class)->create();
 
         // Add existing role
         $this->registerData['role'] = $role->name;

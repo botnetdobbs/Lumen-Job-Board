@@ -35,7 +35,7 @@ class AuthController extends Controller
             'password' => 'required|min:8'
         ]);
         
-        $userRole = $this->roleService->findByName($request->role); 
+        $userRole = $this->roleService->findByName($request->role);
 
         $user = $this->userService->saveUser($request->all());
         $this->userService->attachUserToRole($user, $userRole);

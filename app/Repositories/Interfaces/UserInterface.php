@@ -19,7 +19,7 @@ interface UserInterface
      * Add user
      *
      * @param array $user
-     * 
+     *
      * @return collection
      */
     public function saveUser($user);

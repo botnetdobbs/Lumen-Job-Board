@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\DB;
 
 class UserService implements UserInterface
 {
-
     public function __construct()
     {
         $this->appUrl = env('APP_URL');
@@ -32,7 +31,7 @@ class UserService implements UserInterface
      * Add user
      *
      * @param array $user
-     * 
+     *
      * @return collection
      */
     public function saveUser($user)
@@ -97,5 +96,4 @@ class UserService implements UserInterface
 
         return $response;
     }
-
 }
