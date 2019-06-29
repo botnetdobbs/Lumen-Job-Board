@@ -39,4 +39,9 @@ trait PermissionsTrait
     {
         return $this->jobs()->create($job);
     }
+
+    public function jobApplications()
+    {
+        return $this->hasMany(Application::class, 'applicant_id');
+    }
 }

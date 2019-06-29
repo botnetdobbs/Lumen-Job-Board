@@ -98,6 +98,7 @@ $app->register(Barryvdh\Cors\ServiceProvider::class);
 $app->register(App\Providers\UserRepositoryServiceProvider::class);
 $app->register(App\Providers\RoleRepositoryServiceProvider::class);
 $app->register(App\Providers\JobRepositoryServiceProvider::class);
+$app->register(App\Providers\JobApplicationRepositoryServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------

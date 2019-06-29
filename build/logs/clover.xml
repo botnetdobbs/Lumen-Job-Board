@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1561849230">
+  <project timestamp="1561849230">
+    <package name="App">
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Application.php">
+        <class name="App\Application" namespace="App">
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+        </class>
+        <line num="15" type="method" name="job" visibility="public" complexity="1" crap="2.00" count="0"/>
+        <line num="17" type="stmt" count="0"/>
+        <line num="20" type="method" name="applicant" visibility="public" complexity="1" crap="2.00" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <metrics loc="24" ncloc="24" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+      </file>
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Job.php">
+        <class name="App\Job" namespace="App">
+          <metrics complexity="4" methods="4" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="2" elements="8" coveredelements="4"/>
+        </class>
+        <line num="19" type="method" name="employer" visibility="public" complexity="1" crap="2.00" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="24" type="method" name="jobApplications" visibility="public" complexity="1" crap="1" count="7"/>
+        <line num="26" type="stmt" count="7"/>
+        <line num="29" type="method" name="addApplication" visibility="public" complexity="1" crap="1" count="7"/>
+        <line num="31" type="stmt" count="7"/>
+        <line num="34" type="method" name="jobApplicants" visibility="public" complexity="1" crap="2.00" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <metrics loc="38" ncloc="38" classes="1" methods="4" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="2" elements="8" coveredelements="4"/>
+      </file>
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/PermissionsTrait.php">
+        <class name="PermissionsTrait" namespace="App">
+          <metrics complexity="6" methods="5" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="6" elements="12" coveredelements="10"/>
+        </class>
+        <line num="13" type="method" name="roles" visibility="public" complexity="1" crap="1" count="16"/>
+        <line num="15" type="stmt" count="16"/>
+        <line num="24" type="method" name="hasRole" visibility="public" complexity="2" crap="2" count="16"/>
+        <line num="26" type="stmt" count="16"/>
+        <line num="27" type="stmt" count="15"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="33" type="method" name="jobs" visibility="public" complexity="1" crap="1" count="15"/>
+        <line num="35" type="stmt" count="15"/>
+        <line num="38" type="method" name="addJob" visibility="public" complexity="1" crap="1" count="13"/>
+        <line num="40" type="stmt" count="13"/>
+        <line num="43" type="method" name="jobApplications" visibility="public" complexity="1" crap="2.00" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <metrics loc="47" ncloc="37" classes="1" methods="5" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="6" elements="12" coveredelements="10"/>
+      </file>
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Role.php">
+        <class name="App\Role" namespace="App">
+          <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+        </class>
+        <line num="9" type="method" name="users" visibility="public" complexity="1" crap="2.00" count="0"/>
+        <line num="11" type="stmt" count="0"/>
+        <metrics loc="13" ncloc="13" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </file>
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/User.php">
+        <class name="App\User" namespace="App">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="33" ncloc="23" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Console">
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Console/Kernel.php">
+        <class name="App\Console\Kernel" namespace="App\Console">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        </class>
+        <line num="25" type="method" name="schedule" visibility="protected" complexity="1" crap="1" count="20"/>
+        <line num="28" type="stmt" count="20"/>
+        <metrics loc="29" ncloc="14" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </file>
+    </package>
+    <package name="App\Exceptions">
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Exceptions/Handler.php">
+        <class name="App\Exceptions\Handler" namespace="App\Exceptions">
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+        </class>
+        <line num="34" type="method" name="report" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="36" type="stmt" count="2"/>
+        <line num="37" type="stmt" count="2"/>
+        <line num="46" type="method" name="render" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <metrics loc="50" ncloc="30" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+      </file>
+    </package>
+    <package name="App\Http\Controllers">
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Http/Controllers/ApplicationsController.php">
+        <class name="App\Http\Controllers\ApplicationsController" namespace="App\Http\Controllers">
+          <metrics complexity="6" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="18" coveredelements="18"/>
+        </class>
+        <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="7"/>
+        <line num="14" type="stmt" count="7"/>
+        <line num="15" type="stmt" count="7"/>
+        <line num="22" type="method" name="index" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="33" type="method" name="show" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="45" type="method" name="store" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="1"/>
+        <line num="64" type="method" name="update" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="66" type="stmt" count="2"/>
+        <line num="67" type="stmt" count="2"/>
+        <line num="71" type="stmt" count="2"/>
+        <line num="80" type="method" name="destroy" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="82" type="stmt" count="2"/>
+        <metrics loc="84" ncloc="52" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="18" coveredelements="18"/>
+      </file>
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Http/Controllers/AuthController.php">
+        <class name="App\Http\Controllers\AuthController" namespace="App\Http\Controllers">
+          <metrics complexity="5" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="22" coveredelements="22"/>
+        </class>
+        <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="4"/>
+        <line num="18" type="stmt" count="4"/>
+        <line num="19" type="stmt" count="4"/>
+        <line num="20" type="stmt" count="4"/>
+        <line num="28" type="method" name="register" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="30" type="stmt" count="2"/>
+        <line num="31" type="stmt" count="2"/>
+        <line num="32" type="stmt" count="2"/>
+        <line num="33" type="stmt" count="2"/>
+        <line num="34" type="stmt" count="2"/>
+        <line num="35" type="stmt" count="2"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="52" type="method" name="login" visibility="public" complexity="3" crap="3" count="2"/>
+        <line num="54" type="stmt" count="2"/>
+        <line num="55" type="stmt" count="2"/>
+        <line num="59" type="stmt" count="2"/>
+        <line num="61" type="stmt" count="2"/>
+        <line num="62" type="stmt" count="1"/>
+        <line num="64" type="stmt" count="1"/>
+        <metrics loc="67" ncloc="55" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="22" coveredelements="22"/>
+      </file>
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Http/Controllers/Controller.php">
+        <class name="App\Http\Controllers\Controller" namespace="App\Http\Controllers">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="10" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Http/Controllers/JobsController.php">
+        <class name="App\Http\Controllers\JobsController" namespace="App\Http\Controllers">
+          <metrics complexity="6" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="19" coveredelements="19"/>
+        </class>
+        <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="8"/>
+        <line num="14" type="stmt" count="8"/>
+        <line num="15" type="stmt" count="8"/>
+        <line num="22" type="method" name="index" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="33" type="method" name="show" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="35" type="stmt" count="2"/>
+        <line num="44" type="method" name="store" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="54" type="stmt" count="1"/>
+        <line num="56" type="stmt" count="1"/>
+        <line num="65" type="method" name="Update" visibility="public" complexity="1" crap="1" count="3"/>
+        <line num="67" type="stmt" count="3"/>
+        <line num="68" type="stmt" count="3"/>
+        <line num="75" type="stmt" count="3"/>
+        <line num="84" type="method" name="destroy" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="86" type="stmt" count="1"/>
+        <line num="87" type="stmt" count="1"/>
+        <metrics loc="89" ncloc="60" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="19" coveredelements="19"/>
+      </file>
+    </package>
+    <package name="App\Http\Middleware">
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Http/Middleware/Authenticate.php">
+        <class name="App\Http\Middleware\Authenticate" namespace="App\Http\Middleware">
+          <metrics complexity="3" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="4" elements="7" coveredelements="5"/>
+        </class>
+        <line num="23" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="16"/>
+        <line num="25" type="stmt" count="16"/>
+        <line num="26" type="stmt" count="16"/>
+        <line num="36" type="method" name="handle" visibility="public" complexity="2" crap="2.15" count="16"/>
+        <line num="38" type="stmt" count="16"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="42" type="stmt" count="16"/>
+        <metrics loc="44" ncloc="25" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="4" elements="7" coveredelements="5"/>
+      </file>
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Http/Middleware/RoleMiddleware.php">
+        <class name="App\Http\Middleware\RoleMiddleware" namespace="App\Http\Middleware">
+          <metrics complexity="2" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+        </class>
+        <line num="16" type="method" name="handle" visibility="public" complexity="2" crap="2" count="16"/>
+        <line num="18" type="stmt" count="16"/>
+        <line num="19" type="stmt" count="1"/>
+        <line num="22" type="stmt" count="15"/>
+        <metrics loc="24" ncloc="17" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </file>
+    </package>
+    <package name="App\Providers">
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Providers/AppServiceProvider.php">
+        <class name="App\Providers\AppServiceProvider" namespace="App\Providers">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        </class>
+        <line num="14" type="method" name="register" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="17" type="stmt" count="20"/>
+        <metrics loc="18" ncloc="11" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </file>
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Providers/AuthServiceProvider.php">
+        <class name="App\Providers\AuthServiceProvider" namespace="App\Providers">
+          <metrics complexity="3" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="3" elements="7" coveredelements="4"/>
+        </class>
+        <line num="16" type="method" name="register" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="19" type="stmt" count="20"/>
+        <line num="26" type="method" name="boot" visibility="public" complexity="2" crap="2.50" count="20"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="37" type="stmt" count="20"/>
+        <line num="38" type="stmt" count="20"/>
+        <metrics loc="39" ncloc="19" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="3" elements="7" coveredelements="4"/>
+      </file>
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Providers/EventServiceProvider.php">
+        <class name="App\Providers\EventServiceProvider" namespace="App\Providers">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="19" ncloc="14" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Providers/JobApplicationRepositoryServiceProvider.php">
+        <class name="App\Providers\JobApplicationRepositoryServiceProvider" namespace="App\Providers">
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+        </class>
+        <line num="17" type="method" name="boot" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="20" type="stmt" count="20"/>
+        <line num="27" type="method" name="register" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="29" type="stmt" count="20"/>
+        <line num="30" type="stmt" count="20"/>
+        <line num="31" type="stmt" count="20"/>
+        <line num="33" type="stmt" count="20"/>
+        <metrics loc="34" ncloc="22" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+      </file>
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Providers/JobRepositoryServiceProvider.php">
+        <class name="App\Providers\JobRepositoryServiceProvider" namespace="App\Providers">
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+        </class>
+        <line num="17" type="method" name="boot" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="20" type="stmt" count="20"/>
+        <line num="27" type="method" name="register" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="29" type="stmt" count="20"/>
+        <line num="30" type="stmt" count="20"/>
+        <line num="31" type="stmt" count="20"/>
+        <line num="33" type="stmt" count="20"/>
+        <metrics loc="34" ncloc="22" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+      </file>
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Providers/RoleRepositoryServiceProvider.php">
+        <class name="App\Providers\RoleRepositoryServiceProvider" namespace="App\Providers">
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+        </class>
+        <line num="16" type="method" name="boot" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="19" type="stmt" count="20"/>
+        <line num="26" type="method" name="register" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="28" type="stmt" count="20"/>
+        <line num="29" type="stmt" count="20"/>
+        <line num="30" type="stmt" count="20"/>
+        <line num="32" type="stmt" count="20"/>
+        <metrics loc="33" ncloc="21" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+      </file>
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Providers/UserRepositoryServiceProvider.php">
+        <class name="App\Providers\UserRepositoryServiceProvider" namespace="App\Providers">
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+        </class>
+        <line num="16" type="method" name="boot" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="19" type="stmt" count="20"/>
+        <line num="26" type="method" name="register" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="28" type="stmt" count="20"/>
+        <line num="29" type="stmt" count="20"/>
+        <line num="30" type="stmt" count="20"/>
+        <line num="32" type="stmt" count="20"/>
+        <metrics loc="33" ncloc="21" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+      </file>
+    </package>
+    <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Repositories/Interfaces/JobApplicationInterface.php">
+      <metrics loc="51" ncloc="16" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Repositories/Interfaces/JobInterface.php">
+      <metrics loc="42" ncloc="14" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Repositories/Interfaces/RoleInterface.php">
+      <metrics loc="17" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Repositories/Interfaces/UserInterface.php">
+      <metrics loc="51" ncloc="16" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <package name="App\Repositories\Services">
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Repositories/Services/JobApplicationService.php">
+        <class name="App\Repositories\Services\JobApplicationService" namespace="App\Repositories\Services">
+          <metrics complexity="8" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="25" coveredelements="25"/>
+        </class>
+        <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="7"/>
+        <line num="17" type="stmt" count="7"/>
+        <line num="18" type="stmt" count="7"/>
+        <line num="19" type="stmt" count="7"/>
+        <line num="26" type="method" name="getAllJobApplications" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="28" type="stmt" count="1"/>
+        <line num="37" type="method" name="getSpecificJobApplication" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="49" type="method" name="createJobApplication" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="1"/>
+        <line num="55" type="stmt" count="1"/>
+        <line num="66" type="method" name="updateJobApplication" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="68" type="stmt" count="2"/>
+        <line num="70" type="stmt" count="2"/>
+        <line num="71" type="stmt" count="1"/>
+        <line num="72" type="stmt" count="1"/>
+        <line num="74" type="stmt" count="1"/>
+        <line num="84" type="method" name="removeJobApplication" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="86" type="stmt" count="2"/>
+        <line num="87" type="stmt" count="2"/>
+        <line num="88" type="stmt" count="1"/>
+        <line num="89" type="stmt" count="1"/>
+        <line num="91" type="stmt" count="1"/>
+        <metrics loc="94" ncloc="62" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="25" coveredelements="25"/>
+      </file>
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Repositories/Services/JobService.php">
+        <class name="App\Repositories\Services\JobService" namespace="App\Repositories\Services">
+          <metrics complexity="8" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="21" coveredelements="21"/>
+        </class>
+        <line num="14" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="8"/>
+        <line num="16" type="stmt" count="8"/>
+        <line num="17" type="stmt" count="8"/>
+        <line num="26" type="method" name="createJob" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="28" type="stmt" count="1"/>
+        <line num="36" type="method" name="getAllJobs" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="47" type="method" name="getSpecificJob" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="50" type="stmt" count="2"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="55" type="stmt" count="1"/>
+        <line num="65" type="method" name="updateJob" visibility="public" complexity="2" crap="2" count="3"/>
+        <line num="68" type="stmt" count="3"/>
+        <line num="69" type="stmt" count="2"/>
+        <line num="70" type="stmt" count="2"/>
+        <line num="73" type="stmt" count="1"/>
+        <line num="74" type="stmt" count="1"/>
+        <line num="84" type="method" name="deleteJob" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="86" type="stmt" count="1"/>
+        <line num="87" type="stmt" count="1"/>
+        <metrics loc="89" ncloc="58" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="21" coveredelements="21"/>
+      </file>
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Repositories/Services/RoleService.php">
+        <class name="App\Repositories\Services\RoleService" namespace="App\Repositories\Services">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        </class>
+        <line num="16" type="method" name="findByName" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="18" type="stmt" count="1"/>
+        <metrics loc="20" ncloc="14" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </file>
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Repositories/Services/UserService.php">
+        <class name="App\Repositories\Services\UserService" namespace="App\Repositories\Services">
+          <metrics complexity="7" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="24" elements="30" coveredelements="30"/>
+        </class>
+        <line num="14" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="4"/>
+        <line num="16" type="stmt" count="4"/>
+        <line num="17" type="stmt" count="4"/>
+        <line num="25" type="method" name="findByEmail" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="27" type="stmt" count="2"/>
+        <line num="37" type="method" name="saveUser" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="49" type="method" name="attachUserToRole" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="61" type="method" name="validateCredentials" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="63" type="stmt" count="2"/>
+        <line num="64" type="stmt" count="1"/>
+        <line num="66" type="stmt" count="1"/>
+        <line num="75" type="method" name="generateToken" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="78" type="stmt" count="1"/>
+        <line num="79" type="stmt" count="1"/>
+        <line num="80" type="stmt" count="1"/>
+        <line num="81" type="stmt" count="1"/>
+        <line num="82" type="stmt" count="1"/>
+        <line num="83" type="stmt" count="1"/>
+        <line num="86" type="stmt" count="1"/>
+        <line num="87" type="stmt" count="1"/>
+        <line num="88" type="stmt" count="1"/>
+        <line num="92" type="stmt" count="1"/>
+        <line num="93" type="stmt" count="1"/>
+        <line num="94" type="stmt" count="1"/>
+        <line num="95" type="stmt" count="1"/>
+        <line num="97" type="stmt" count="1"/>
+        <metrics loc="99" ncloc="67" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="24" elements="30" coveredelements="30"/>
+      </file>
+    </package>
+    <package name="App\Rules">
+      <file name="/Users/lazarusodhiambo/Sites/LumenJobBoard/app/Rules/RoleExists.php">
+        <class name="App\Rules\RoleExists" namespace="App\Rules">
+          <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+        </class>
+        <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="19" type="stmt" count="2"/>
+        <line num="28" type="method" name="passes" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="30" type="stmt" count="2"/>
+        <line num="31" type="stmt" count="2"/>
+        <line num="39" type="method" name="message" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <metrics loc="43" ncloc="24" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+      </file>
+    </package>
+    <metrics files="29" loc="1268" ncloc="805" classes="22" methods="66" coveredmethods="58" conditionals="0" coveredconditionals="0" statements="159" coveredstatements="150" elements="225" coveredelements="208"/>
+  </project>
+</coverage>
