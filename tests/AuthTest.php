@@ -18,7 +18,6 @@ class AuthTest extends TestCase
             'email' => 'test.user@email.com',
             'password' => 'password'
         ];
-
     }
 
     /**

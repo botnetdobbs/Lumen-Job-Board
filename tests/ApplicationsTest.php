@@ -32,7 +32,7 @@ class ApplicationsTest extends TestCase
      */
     public function createJob()
     {
-        $role = factory(Role::class)->create(['name' => 'employer']);        
+        $role = factory(Role::class)->create(['name' => 'employer']);
         $employer = factory(User::class)->create();
         $employer->roles()->attach($role);
         return $employer->addJob($this->jobData);
@@ -52,7 +52,7 @@ class ApplicationsTest extends TestCase
         $this->applicationData['applicant_id'] = $applicant->id;
         $job->addApplication($this->applicationData);
         
-        $response = $this->get("api/v1/jobs/{$this->job->id}/applications/",);
+        $response = $this->get("api/v1/jobs/{$this->job->id}/applications/");
         
         unset($this->applicationData['applicant_id']);
         $response->assertResponseStatus(200);

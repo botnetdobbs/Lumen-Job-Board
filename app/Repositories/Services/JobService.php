@@ -65,14 +65,14 @@ class JobService implements JobInterface
     public function updateJob($job, $id)
     {
         try {
-            $existingJob = $this->employer->jobs()->findOrFail($id);;
+            $existingJob = $this->employer->jobs()->findOrFail($id);
+            ;
         } catch (ModelNotFoundException $e) {
             return response()->json(['status' => 'error', 'message' => 'Resource not found.'], 404);
         }
 
         $existingJob->update($job);
         return $existingJob;
-
     }
 
     /**

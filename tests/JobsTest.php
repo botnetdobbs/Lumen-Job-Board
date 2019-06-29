@@ -137,7 +137,7 @@ class JobsTest extends TestCase
 
     /**
      * @test
-     * 
+     *
      * NB: This endpoint can be accessed by any authenticated user
      *
      */
@@ -157,7 +157,7 @@ class JobsTest extends TestCase
 
     /**
      * @test
-     * 
+     *
      * NB: This endpoint can be accessed by any authenticated user
      */
     public function tryingToviewNonExistingJobPostingreturns404()
@@ -191,8 +191,8 @@ class JobsTest extends TestCase
     }
 
     /**
-     * 
-     * 
+     *
+     *
      *
      * NB: We use the relationship to get the employers job postings hence the cannot edit others'
      */

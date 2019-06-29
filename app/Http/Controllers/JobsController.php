@@ -84,6 +84,6 @@ class JobsController extends Controller
     public function destroy($id)
     {
         $this->jobService->deleteJob($id);
-        return response()->json([], 204);       
+        return response()->json([], 204);
     }
 }
