@@ -40,7 +40,7 @@ class ApplicationsController extends Controller
      *
      * @param Request $request
      * @param int $id
-     * @return void
+     * @return response
      */
     public function store(Request $request, $id)
     {
@@ -48,8 +48,11 @@ class ApplicationsController extends Controller
             'subject' => 'required|string',
             'cv_description' => 'required'
         ]);
-
         $data = $this->jobApplicationService->createJobApplication($request, $id);
+
+        if ($data === false) {
+            return response()->json(['status' => 'error', 'message' => 'You already applied for this role.'], 400);
+        }
         return response()->json($data, 201);
     }
 

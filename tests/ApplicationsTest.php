@@ -60,7 +60,6 @@ class ApplicationsTest extends TestCase
     }
 
     /**
-     * @group test
      * @test
      *
      */
@@ -97,6 +96,27 @@ class ApplicationsTest extends TestCase
         
         $response->assertResponseStatus(201);
         $response->seeJson($this->applicationData);
+    }
+
+    /**
+     * @group test
+     * @test
+     *
+     */
+    public function anApplicantCannotSendAnApplicationForAJobTwice()
+    {
+        $role = factory(Role::class)->create(['name' => 'applicant']);
+        $applicant = factory(User::class)->create();
+        $applicant->roles()->attach($role);
+        $this->be($applicant);
+        $job = $applicant->addJob($this->jobData);
+        //Add applicant_id
+        $this->applicationData['applicant_id'] = $applicant->id;
+        $application = $job->addApplication($this->applicationData);
+        // dd($application);
+        $response = $this->post("api/v1/jobs/{$job->id}/applications/", $this->applicationData);
+        
+        $response->assertResponseStatus(400);
     }
 
     /**

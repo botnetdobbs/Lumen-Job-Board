@@ -25,28 +25,42 @@ $router->group(['prefix' => 'api/v1'], function() use(&$router) {
         $router->post('login', 'AuthController@login');
     });
 
-    /**
-     * Jobs
-     */
-    $router->group(['prefix' => 'jobs', 'middleware' => ['auth:api', 'cors', 'role:employer']], function() use(&$router) {
+
+    $router->group(['prefix' => 'jobs', 'middleware' => ['auth:api', 'cors']], function() use(&$router) {
+        /**
+         * Jobs open
+         */
         $router->get('/', 'JobsController@index');
         $router->get('/{id}', 'JobsController@show');
-        
-        $router->post('/', 'JobsController@store');
-        $router->put('/{id}', 'JobsController@update');
-        $router->delete('/{id}', 'JobsController@destroy');
 
+        /**
+         * Jobs employers only access
+         */
+        $router->group(['middleware' => 'role:employer'], function() use(&$router) {
+            $router->post('/', 'JobsController@store');
+            $router->put('/{id}', 'JobsController@update');
+            $router->delete('/{id}', 'JobsController@destroy');
+        });
 
-    });
+        /**
+         * Applications
+         */
+        $router->group(['prefix' => '{id}/applications'], function() use(&$router) {
+            /**
+             * Applications open
+             */
+            $router->get('/{applicationId}', 'ApplicationsController@show');
 
-    /**
-     * Applications
-     */
-    $router->group(['prefix' => 'jobs/{id}/applications', 'middleware' => ['auth:api', 'cors', 'role:applicant']], function() use(&$router) {
-        $router->get('/{applicationId}', 'ApplicationsController@show');
-        $router->post('/', 'ApplicationsController@store');
-        $router->get('/', 'ApplicationsController@index');
-        $router->put('/{applicationId}', 'ApplicationsController@update');
-        $router->delete('/{applicationId}', 'ApplicationsController@destroy');
+            /**
+             * Applications applicant only
+             */
+            $router->group(['middleware' => 'role:applicant'], function() use(&$router) {
+                $router->post('/', 'ApplicationsController@store');
+                $router->get('/', 'ApplicationsController@index');
+                $router->put('/{applicationId}', 'ApplicationsController@update');
+                $router->delete('/{applicationId}', 'ApplicationsController@destroy');
+            });
+        });
+
     });
 });

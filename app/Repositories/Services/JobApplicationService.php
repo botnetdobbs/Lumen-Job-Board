@@ -44,7 +44,7 @@ class JobApplicationService implements JobApplicationInterface
      *
      * @param Request $request
      * @param int $id
-     * @return collection
+     * @return boolean/collection
      */
     public function createJobApplication($request, $id)
     {
@@ -52,6 +52,9 @@ class JobApplicationService implements JobApplicationInterface
         $data['applicant_id'] = $request->user()->id;
         $job = $this->job->find($id);
 
+        if ($job->jobApplications()->where('applicant_id', $request->user()->id)->first()) {
+            return false;
+        }
         return $job->addApplication($data);
     }
 

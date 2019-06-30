@@ -35,7 +35,7 @@ class JobService implements JobInterface
      */
     public function getAllJobs()
     {
-        return $this->employer->jobs()->get();
+        return Job::all();
     }
 
     /**
@@ -47,7 +47,7 @@ class JobService implements JobInterface
     public function getSpecificJob($id)
     {
         try {
-            $existingJob = $this->employer->jobs()->findOrFail($id);
+            $existingJob = Job::findOrFail($id);
         } catch (ModelNotFoundException $e) {
             return response()->json(['status' => 'error', 'message' => 'Resource not found.'], 404);
         }
