@@ -4,6 +4,8 @@
 
 ## Setup
 
+[Deployed API](http://lumenjobboard.herokuapp.com/api/v1/jobs)
+
 ### Dependencies
 
 * [PHP 7+](http://php.net/) - popular general-purpose scripting language suited to web development
