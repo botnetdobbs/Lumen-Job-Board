@@ -13,6 +13,10 @@ class JobService implements JobInterface
 
     public function __construct()
     {
+        /**
+         * Called this employer because the routes for the create, update and delete
+         * accept only users with role of employer
+         */
         $this->employer = Auth::user();
     }
 
@@ -35,7 +39,11 @@ class JobService implements JobInterface
      */
     public function getAllJobs()
     {
+        if (Auth::user()->hasRole('employer')) {
+            return $this->employer->jobs()->with('jobApplications')->get();
+        }
         return Job::all();
+        
     }
 
     /**
